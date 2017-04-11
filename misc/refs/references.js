@@ -7,6 +7,41 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/Window/history - history library bundled with React-Router
 
 
+
+//============= Publications ==============//
+
+// if (Meteor.isServer){
+//     Meteor.publish('links', function (){
+//       return Links.find({ userId: this.userId }); //returning documents from the Links collection with the userId equal to Meteor.userId or in this case - this.userId
+//     });
+// }
+
+
+//================ METEOR METHODS ==============//
+// METHODS THAT GET CALLED ON THE SERVER AND SIMULATED IN THE CLIENT
+
+//SERVER - link.js
+
+// Meteor.methods({
+//   addNumbers( a, b ) {
+//     console.log('Numbers added');
+//
+      // if (typeof a !== 'number' || typeof a !== 'number') {
+      //   throw new Meteor.Error('not valid', 'needs to be a number');
+      // }
+//
+//     return a + b;
+//   }
+// });
+
+//CLIENT - main.js (for now)
+
+// Meteor.call('addNumbers', 1, 'Boone', (err, res) => {
+//   console.log('Addition value', err, res);
+// });
+
+//this will throw an error based on the typeof failure -- typeof a === 'number'
+
 //======================= DEALING WITH STATE ======================//
 
 // export default class Signup extends React.Component { // DEFINE DEFAULT CLASS
