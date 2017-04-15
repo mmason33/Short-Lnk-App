@@ -7,6 +7,28 @@
 //https://developer.mozilla.org/en-US/docs/Web/API/Window/history - history library bundled with React-Router
 
 
+//============== NODE CONNECT MIDDLEWARE (REDIRECTING SETTING HTTP PARAMS)
+
+// // WebApp.connectHandlers.use((req, res, next) => {
+// //   res.statusCode = 302;
+// //   res.setHeader('Location', 'https://www.google.com');
+// //   res.end();
+// // });
+// //
+// // WebApp.connectHandlers.use((req, res, next) => {
+// //   console.log('from middlerware');
+//   res is an object via the Node Connect Middleware Library
+//   Set HTTP status code
+//   res.statusCode = 404;
+//   Set HTTP headers
+//   res.setHeader('my-custom-header', 'Boone was here');
+//   Set HTTP body
+//   res.write('<h1>Hello Middleware</h1>');
+//   End HTTP request
+//   res.end();
+// //
+// //   next();
+// // });
 
 //============= Publications ==============//
 
